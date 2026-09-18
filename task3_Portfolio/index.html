@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afnan Hossain Esha | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .fade-in {
+            animation: fadeIn 1s ease-in forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="#home" class="text-xl font-bold text-blue-600">AHE</a>
+                <div class="hidden sm:flex space-x-8">
+                    <a href="#about" class="text-slate-600 hover:text-blue-600 transition-colors">About</a>
+                    <a href="#experience" class="text-slate-600 hover:text-blue-600 transition-colors">Experience</a>
+                    <a href="#skills" class="text-slate-600 hover:text-blue-600 transition-colors">Skills</a>
+                    <a href="#contact" class="text-slate-600 hover:text-blue-600 transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1 text-center md:text-left fade-in">
+            <h1 class="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">
+                Hi, I am <span class="text-blue-600">Afnan Hossain Esha</span>
+            </h1>
+            <p class="text-xl text-slate-600 mb-8 leading-relaxed">
+                Software engineering student specializing in frontend development. I combine strong English communication and AI optimization skills to build responsive user interfaces and collaborate seamlessly across teams.
+            </p>
+            <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-sm">
+                Get in Touch
+            </a>
+        </div>
+        <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-xl fade-in delay-100 flex-shrink-0 bg-slate-200">
+            <img src="https://placehold.co/400x400/e2e8f0/475569?text=Profile+Photo" alt="Afnan Hossain Esha" class="w-full h-full object-cover">
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-slate-900 mb-8 fade-in text-center">Education & Certifications</h2>
+            <div class="grid md:grid-cols-2 gap-12 fade-in delay-100">
+                <div class="bg-slate-50 p-8 rounded-xl shadow-sm border border-slate-100">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4">Academic Background</h3>
+                    <div class="mb-4">
+                        <p class="font-bold text-slate-900">Daffodil International University</p>
+                        <p class="text-slate-600">BSc in Software Engineering (7th semester)</p>
+                        <p class="text-sm text-slate-500">2024 - Present | CGPA: 3.73</p>
+                    </div>
+                    <div class="mb-4">
+                        <p class="font-bold text-slate-900">Dhamrai Government College</p>
+                        <p class="text-slate-600">HSC</p>
+                        <p class="text-sm text-slate-500">2023</p>
+                    </div>
+                    <div>
+                        <p class="font-bold text-slate-900">Dhamrai Hardinge High School and College</p>
+                        <p class="text-slate-600">SSC</p>
+                        <p class="text-sm text-slate-500">2021</p>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-xl shadow-sm border border-slate-100">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4">Certifications</h3>
+                    <ul class="space-y-3 text-slate-700">
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">▹</span>
+                            Network Smarter with AI (Grameenphone Academy)
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">▹</span>
+                            Humanising AI Experiences (Grameenphone Academy)
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">▹</span>
+                            AI Fluency: Framework & Foundations (Claude Academy)
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">▹</span>
+                            Spoken English (Saifur's)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-slate-900 mb-12 fade-in text-center">Experience & Leadership</h2>
+            
+            <div class="space-y-6 fade-in delay-200">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start flex-wrap gap-2 mb-2">
+                        <h3 class="text-lg font-bold text-slate-900">Frontend Development Intern</h3>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full font-medium">CodeAlpha</span>
+                    </div>
+                    <p class="text-slate-500 text-sm mb-4">Ongoing</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start flex-wrap gap-2 mb-2">
+                        <h3 class="text-lg font-bold text-slate-900">Front-end AI Engineering Intern</h3>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full font-medium">FlyRank</span>
+                    </div>
+                    <p class="text-slate-500 text-sm mb-4">Ongoing</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start flex-wrap gap-2 mb-2">
+                        <h3 class="text-lg font-bold text-slate-900">AI Technical Content Writer Intern</h3>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full font-medium">GaoTek Inc.</span>
+                    </div>
+                    <p class="text-slate-500 text-sm mb-4">Ongoing</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow mt-8">
+                    <h3 class="text-lg font-bold text-slate-900 mb-4">Leadership & Initiatives</h3>
+                    <ul class="grid sm:grid-cols-2 gap-3 text-slate-700">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-3"></span> Researcher | NASA Space Apps Challenge</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-3"></span> Member | National Union of Research Organization</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-3"></span> Campus Ambassador | Grow Your Career</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-3"></span> Secretary | Women Welfare Wing</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-3"></span> Executive Member | DIUSEC</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-slate-900 mb-12 fade-in text-center">Skills</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 fade-in delay-300">
+                <div class="p-6 border border-slate-100 rounded-xl hover:border-blue-200 transition-colors">
+                    <h3 class="text-xl font-semibold mb-4 text-slate-900">Technical</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-100 px-3 py-1 rounded text-sm text-slate-700">Frontend Development</span>
+                        <span class="bg-slate-100 px-3 py-1 rounded text-sm text-slate-700">HTML & CSS</span>
+                        <span class="bg-slate-100 px-3 py-1 rounded text-sm text-slate-700">JavaScript</span>
+                        <span class="bg-slate-100 px-3 py-1 rounded text-sm text-slate-700">C & Java</span>
+                        <span class="bg-slate-100 px-3 py-1 rounded text-sm text-slate-700">SQL</span>
+                        <span class="bg-slate-100 px-3 py-1 rounded text-sm text-slate-700">Prompt Engineering</span>
+                    </div>
+                </div>
+
+                <div class="p-6 border border-slate-100 rounded-xl hover:border-blue-200 transition-colors">
+                    <h3 class="text-xl font-semibold mb-4 text-slate-900">Creative & Media</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-100 px-3 py-1 rounded text-sm text-slate-700">Photography</span>
+                        <span class="bg-slate-100 px-3 py-1 rounded text-sm text-slate-700">Video & Photo Editing</span>
+                        <span class="bg-slate-100 px-3 py-1 rounded text-sm text-slate-700">Visual Storytelling</span>
+                        <span class="bg-slate-100 px-3 py-1 rounded text-sm text-slate-700">Content Writing</span>
+                        <span class="bg-slate-100 px-3 py-1 rounded text-sm text-slate-700">Social Media Management</span>
+                    </div>
+                </div>
+
+                <div class="p-6 border border-slate-100 rounded-xl hover:border-blue-200 transition-colors">
+                    <h3 class="text-xl font-semibold mb-4 text-slate-900">Soft Skills</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-100 px-3 py-1 rounded text-sm text-slate-700">Problem-Solving</span>
+                        <span class="bg-slate-100 px-3 py-1 rounded text-sm text-slate-700">Fast Learning</span>
+                        <span class="bg-slate-100 px-3 py-1 rounded text-sm text-slate-700">Asynchronous Communication</span>
+                        <span class="bg-slate-100 px-3 py-1 rounded text-sm text-slate-700">Cross-Cultural Collaboration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-3xl mx-auto px-4 text-center fade-in">
+            <h2 class="text-3xl font-bold mb-8">Let's Connect</h2>
+            <p class="text-slate-400 mb-8 text-lg">I am always open to discussing new projects, creative ideas, or opportunities to collaborate.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-12">
+                <a href="mailto:afnanesha0222@gmail.com" class="flex items-center text-slate-300 hover:text-white transition-colors">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    afnanesha0222@gmail.com
+                </a>
+                <span class="flex items-center text-slate-300">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    01955766848
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach((el) => {
+            el.style.animationPlayState = 'paused';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
